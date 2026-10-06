@@ -34,6 +34,14 @@ section {
     font-family: 'Noto Sans Tamil', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+main a {
+    color: #141414;
+}
+
 
 /* Header */
 
@@ -258,7 +266,7 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    background-image: url(/images/Paper\ Fibers.png);
+    /*background-image: url(/images/Paper\ Fibers.png);*/
 }
 
 #card-title{
@@ -313,10 +321,17 @@ footer {
 
     div#footer-container {
         display: flex;
-        align-items: center;
         justify-content: space-between;
         column-gap: 10px;
         box-sizing: border-box;
+    }
+
+    footer a {
+        color: #141414;
+    }
+
+    footer a:hover {
+        color: #FFF;
     }
 
     footer ul {
@@ -335,19 +350,19 @@ footer {
     }
 
         li.footer-heading {
-        font-weight: 700;
+            font-weight: 700;
         }
     
         p#footer-disclaimer {
-        display: block;
-        text-align: center;
-        font-size: 0.75rem;
-    }
+            display: block;
+            text-align: center;
+            font-size: 0.75rem;
+        }
 
         div#footer-disclaimer-container {
-        display: block;
-        margin: 0;
-    }
+            display: block;
+            margin: 0;
+        }
 
 /* Media Queries */
 
@@ -360,6 +375,10 @@ footer {
         flex-wrap: wrap;
     }
 }
+
+/* Less than or equal to 100px */
+@media (width <= 1000px) {
+
 
 /* Less than or equal to 800px */
 @media (width <= 800px) {
@@ -438,7 +457,8 @@ div#hero-image {
         align-items: center;
         gap: 40px;
     }
-
+}
+    
 /* Less than or equal to 600px */
 @media (max-width: 600px) {
     .activity-card {
