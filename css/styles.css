@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Noto Sans Tamil';
-    src: url("fonts/NotoSansTamil-VariableFont_wght.ttf");
+    src: url("../fonts/NotoSansTamil-VariableFont_wdth,wght.ttf");
 }
 
 /* Full Page Styles */
@@ -27,7 +27,7 @@ body {
 }
 
 section {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 :lang(tamil) {
@@ -315,7 +315,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
         column-gap: 10px;
         box-sizing: border-box;
     }
@@ -351,6 +350,16 @@ footer {
     }
 
 /* Media Queries */
+
+/* Less than or equal to 1100px */
+
+/* Activities */
+
+@media (max-width: 1100px) {
+    .activity-card-container {
+        flex-wrap: wrap;
+    }
+}
 
 /* Less than or equal to 800px */
 @media (width <= 800px) {
@@ -415,6 +424,11 @@ div#hero-image {
         padding-top: 28px;
     }
 
+/* Activities */
+.activity-card-container {
+    flex-wrap: wrap;
+}
+
 /* Events */
 
     #div-all-event-cards{
@@ -425,7 +439,20 @@ div#hero-image {
         gap: 40px;
     }
 
-@media(max-width: 300px){
+/* Less than or equal to 600px */
+@media (max-width: 600px) {
+    .activity-card {
+        width: 100%;
+    }
+
+    .activity-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Less than or equal to 320px */
+@media(max-width: 320px){
 
     #event-card-image{
        width: 240px;
