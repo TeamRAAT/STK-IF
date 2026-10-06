@@ -1,0 +1,450 @@
+/* Font files */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Sans Tamil';
+    src: url("fonts/NotoSansTamil-VariableFont_wght.ttf");
+}
+
+/* Full Page Styles */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: clamp(10px, 2vw, 14px);
+    background-color: #E6DDCD;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+:lang(tamil) {
+    font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 0px 5%;
+    margin: 0;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0px 4px 10px #41414140;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+    header div#logo {
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+
+        header #logo img {
+            height: 100%;
+            padding-right: 10px;
+        }
+
+    header h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #141414;
+    }
+
+        header h1 span {
+        font-weight: 400;
+        }
+
+    header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li {
+        float: left;
+        display: block;
+        color: #141414;
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header ul li a {
+        color: #141414;
+        text-decoration: none;
+    }
+
+        header ul li a:hover {
+        color: #FFBF00;
+        text-decoration: none;
+    }
+
+/* Hero Image */
+
+    div#hero-image {
+        width: 100vw;
+        margin-top: 100px;
+    }
+
+        div#hero-image img {
+            width: 100%;
+        }
+
+/* Main Content */
+
+main {
+    margin: 0 10%;
+}
+
+/* Introduction */
+
+section#about {
+    text-align: center;
+}
+
+h2.tamil-heading {
+    color: #A45431;
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.about-section h1 {
+    color: #243B32;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-description {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #5B665F;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+    border: 2px solid #294F3E;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: #294F3E;
+    color: #FFFFFF;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #294F3E;
+}
+
+.button-primary:hover {
+    background-color: #1C392B;
+    border-color: #1C392B;
+}
+
+.button-secondary:hover {
+    background-color: #EDF3ED;
+}
+
+.button:focus-visible {
+    outline: 3px solid #A45431;
+    outline-offset: 4px;
+}
+
+.mascot-caption {
+    margin: 28px 0 0;
+    color: #667268;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-introduction {
+    margin-top: 56px;
+    padding-top: 36px;
+    border-top: 1px solid #E5E8E2;
+}
+
+.introduction-heading {
+    margin: 0 0 20px;
+    color: #243B32;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* Activities */
+
+h1 {
+    font-size: 68px;
+    text-align: center;
+    font-weight: 600;
+}
+.activity-card {
+    background-color: white;
+    border: 1px solid #D5E0E6;
+    border-radius: 24px;
+    padding: 18px;
+    width: 220px;
+    max-height: 340px;
+}
+.activity-card-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.activity-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Events */
+
+#div-all-event-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#event-card-image{
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#event-card-container{
+    background-color: rgb(255, 242, 220);
+    width: 280px;
+    padding: 14px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-image: url(/images/Paper\ Fibers.png);
+}
+
+#card-title{
+    font-weight: bold;
+
+}
+
+#card-txt{
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+#card-time-hour-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#card-calendar-svg, #card-place-svg{
+    width: 18px;
+
+}
+
+.card-svg-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#card-hour, #card-place{
+    margin-bottom: 11px;
+}
+
+#card-button{
+    padding: 8px;
+    background-color: rgb(255, 188, 18);
+    border-style: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    padding: 20px 10%;
+    margin: 0;
+    height: 65px;
+    background: rgb(255, 188, 18);
+}
+
+    div#footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 10px;
+        box-sizing: border-box;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    footer ul li {
+        text-align: left;
+        display: block;
+        color: #141414;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+        li.footer-heading {
+        font-weight: 700;
+        }
+    
+        p#footer-disclaimer {
+        display: block;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+        div#footer-disclaimer-container {
+        display: block;
+        margin: 0;
+    }
+
+/* Media Queries */
+
+/* Less than or equal to 800px */
+@media (width <= 800px) {
+
+body {
+    font-size: clamp(5px, 2vw, 12px);
+}
+
+/* Header */
+
+header {
+    padding: 10px 10px;
+    margin-top: 0px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    header div#logo {
+        top: 0px;
+        min-height: 20px;
+        max-height: 50px;
+    }
+    header h1 {
+        display: none;
+    }
+
+    header ul li {
+        font-size: 0.5rem;
+        text-align: center;
+        padding: 5px;
+    }
+
+/* Hero Image */
+
+div#hero-image {
+    margin-top: 70px;
+}
+
+/* Introduction */
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .about-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .about-introduction {
+        margin-top: 40px;
+        padding-top: 28px;
+    }
+
+/* Events */
+
+    #div-all-event-cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+@media(max-width: 300px){
+
+    #event-card-image{
+       width: 240px;
+        height: 180px;
+        border-radius: 10px;
+    }
+    #event-card-container{
+        width: 240px;
+        padding: 12px;
+
+    }
+
+    #card-title{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #card-txt{
+        line-height: 1.6;
+        font-size: 13px;
+    }
+}
