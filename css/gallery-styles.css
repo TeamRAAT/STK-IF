@@ -1,0 +1,36 @@
+/* Gallery */
+
+section#gallery {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gallery .gallery-grid-container {
+  columns: 3 300px;
+  column-gap: 25px;
+  margin: 0 auto;
+}
+
+  div.gallery-image-container {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    background-color: #FFF;
+    border-radius: 14px;
+  }
+
+    div.gallery-image-container img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    div.gallery-image-container p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+    }
