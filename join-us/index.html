@@ -9,34 +9,117 @@
 </head>
 
 <body>
+    <header>
+
+    <div id="logo">
+        <img src="../images/logo.jpg" alt="Stockholm Tamil Kultur IF Logo">
+        <h1>STK IF: <span>Stockholm Tamil Kultur IF</span></h1>
+    </div>
+
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>|</li>
+        <li><a href="../events.html">Events</a></li>
+        <li>|</li>
+        <li><a href="../about.html">About</a></li>
+        <li>|</li>
+        <li><a href="index.html">Join Us</a></li>
+    </ul>
+</header>
+
+<main class="join-page">
+
+    <div class="join-info">
+
+    <section>
+        <h2>Membership</h2>
+
+        <p>
+            We welcome people of every background who want to connect
+            through Tamil heritage and Swedish community life.
+        </p>
+
+        <p>
+            <strong>Membership interest registration is not open yet.</strong>
+            The registration process, any fees and privacy information are
+            being finalised. This page will carry the registration link once
+            it is approved.
+        </p>
+    </section>
+
+    <section>
+        <h2>Volunteer with us</h2>
+
+        <p>
+            You do not need to do everything. Bring a skill and the time you
+            can share.
+        </p>
+
+        <p>
+            <strong>Volunteer interest registration will open alongside membership.</strong>
+        </p>
+    </section>
+
+</div>
+
+<div class="join-form-side">
+
     <h1>Join Us</h1>
         <p>Fill in your details and choose the activities you are interested in.</p>
 
     <form>
+ 
 
     <label for="fullname">Full Name</label>
-    <input type="text" id="fullname" name="fullname">
+    <input type="text" id="fullname" name="fullname" required>
 
     <label for="email">Email</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" required>
 
-    <label for="activities">Select Activities</label>
-    <select id="activities" name="activities" multiple>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
 
-        <option value="sports">Sports</option>
-        <option value="music">Culture</option>
-        <option value="volunteering">Family</option>
-        <option value="workshops">Youth</option>
-        <option value="events">Community</option>
-        <option value="other">Volunteering</option>
-    
-    </select>
+   <p>Select Activities</p>
+
+<label>
+    <input type="checkbox" name="activities" value="sports">
+    Sports
+</label>
+
+<label>
+    <input type="checkbox" name="activities" value="culture">
+    Culture
+</label>
+
+<label>
+    <input type="checkbox" name="activities" value="family">
+    Family
+</label>
+
+<label>
+    <input type="checkbox" name="activities" value="youth">
+    Youth
+</label>
+
+<label>
+    <input type="checkbox" name="activities" value="community">
+    Community
+</label>
+
+<label>
+    <input type="checkbox" name="activities" value="volunteering">
+    Volunteering
+</label>
 
 
     <button type="submit">Join Us</button>
 
 
     </form>
+
+    </div>
+</main>   
+
 </body>
 
 </html>
