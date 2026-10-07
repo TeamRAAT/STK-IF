@@ -1,0 +1,249 @@
+/* Font files */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Sans Tamil';
+    src: url("../fonts/NotoSansTamil-VariableFont_wdth-wght.ttf");
+}
+
+/* Full Page Styles */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 2vw, 18px);
+    background-color: #fffcf0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+
+main {
+    margin: 0;
+    margin-top: 120px;
+    flex: 1;
+}
+
+/* Text styles */
+
+h1 {
+    font-size: clamp(32px, 5vw, 36px);
+    font-weight: 800;
+    color: #1C392B;
+    margin: 0;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+:lang(ta) {
+    font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main a {
+    color: #141414;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 5%;
+    margin: 0;
+    max-height: 100px;
+    min-height: 80px;
+    background: #fff;
+    box-shadow: 0px 4px 10px #41414140;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+    header #logo {
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+
+        header #logo img {
+            height: 100%;
+            padding-right: 10px;
+        }
+
+    header h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #141414;
+    }
+
+        header h1 span {
+        font-weight: 400;
+        }
+
+    header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li {
+        float: left;
+        display: block;
+        color: #141414;
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header ul li a {
+        color: #141414;
+        text-decoration: none;
+    }
+
+        header ul li a:hover {
+        color: #FFBF00;
+        text-decoration: none;
+    }
+
+    /* Footer */
+
+footer {
+    bottom: 0;
+    padding: 30px 10%;
+    margin: 0;
+    margin-top: 40px;
+    height: fit-content;
+    background: rgb(255, 188, 18);
+}
+
+    div#footer-container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        box-sizing: border-box;
+    }
+
+    footer a {
+        color: #141414;
+    }
+
+    footer a:hover {
+        color: #FFF;
+    }
+
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    footer ul li {
+        text-align: left;
+        display: block;
+        color: #141414;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+        li.footer-heading {
+            font-weight: 700;
+        }
+    
+        p#footer-disclaimer {
+            display: block;
+            text-align: center;
+            font-size: 0.75rem;
+            margin-top: 30px;
+                color: #333333;
+            margin-bottom: 10px;
+        }
+
+        div#footer-disclaimer-container {
+            display: block;
+            margin: 0;
+        }
+
+/* Media Queries */
+
+/* Less than or equal to 800px */
+@media (width <= 800px) {
+
+body {
+    font-size: clamp(5px, 2vw, 12px);
+}
+
+/* Header */
+
+header {
+    padding: 10px 10px;
+    margin-top: 0px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    header #logo {
+        top: 0px;
+        min-height: 20px;
+        max-height: 50px;
+    }
+    header h1 {
+        display: none;
+    }
+
+    header ul li {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+/* Less than or equal to 600px */
+@media (max-width: 600px) {
+
+        header ul li {
+        font-size: 0.6rem;
+    }
+
+/* Footer */
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer ul li {
+        text-align: center;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+}

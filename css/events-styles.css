@@ -1,79 +1,21 @@
-/* Font Files */
-@font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
-    font-style: normal;
-}
+/* Main Content Wrapper */
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Noto Sans Tamil';
-    src: url("../fonts/NotoSansTamil-VariableFont_wdth-wght.ttf");
-}
-
-
-body {
-    margin: 0;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+main#events-page {
     font-size: clamp(12px, 1.5vw, 15px);
-    background-color: #fffcf0;
     color: #141414;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-:lang(ta), :lang(tamil) {
-    font-family: 'Noto Sans Tamil', sans-serif;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
-}
-
-/* Header */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 80px;
-    padding: 10px 5%;
-    background: #ffffff;
-    box-shadow: 0px 4px 10px rgba(65, 65, 65, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-}
-
-
-/* Main Content Wrapper */
-main#events-page {
-    margin-top: 100px;
-    flex: 1;
 }
 
 /* Events Header Section */
 #events-header {
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px 20px 20px;
+    padding: 0px 20px 20px;
     text-align: center;
-}
-
-#events-h2 {
-    font-size: clamp(32px, 5vw, 36px);
-    font-weight: 800;
-    color: #1C392B;
-    margin-bottom: 16px;
-    letter-spacing: -1px;
+    flex: 1;
 }
 
 #events-header p {
@@ -176,6 +118,7 @@ main#events-page {
     width: 100%;
     padding: 12px;
     background-color: #FFBC12;
+    font-family: inherit;
     color: #141414;
     border: none;
     border-radius: 8px;
@@ -189,89 +132,19 @@ main#events-page {
     background-color: #E0A30D;
 }
 
-/* Footer Styling */
-footer#footer-eventpage {
-    background: #FFBC12;
-    padding: 30px 8%;
-    margin-top: auto;
-}
-
-#footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer ul li {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    color: #141414;
-}
-
-li.footer-heading {
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-#footer-disclaimer-container {
-    margin-top: 24px;
-    text-align: center;
-}
-
-#footer-disclaimer {
-    font-size: 0.75rem;
-    color: #333333;
-    margin: 0;
-}
 
 /* Media Queries */
 
 /* Tablet Screens (<= 768px) */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 12px;
-    }
-
-    main#events-page {
-        margin-top: 130px;
-    }
 
     .divider {
         display: none;
-    }
-
-    header ul.nav-links {
-        justify-content: center;
-        gap: 14px;
-    }
-
-    #footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer ul {
-        text-align: center;
     }
 }
 
 /* Small Mobile Screens (<= 480px) */
 @media (max-width: 480px) {
-    main#events-page {
-        margin-top: 140px;
-    }
-
     #events-header {
         padding: 20px 16px;
     }
