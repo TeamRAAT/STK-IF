@@ -1,5 +1,9 @@
 /* Gallery */
 
+main#gallery-page {
+  padding: 0 10%;
+}
+
 section#gallery {
     margin-top: 100px;
     display: flex;
