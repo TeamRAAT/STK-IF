@@ -4,213 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Stockholm Tamil Kultur IF</title>
+    <title>Events - Stockholm Tamil Kultur IF</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/events-page.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 <body>
+
+    <!-- Header Navigation -->
     <header>
         <div id="logo">
             <img src="images/logo.png" alt="Stockholm Tamil Kultur IF Logo">
             <h1>STK IF</h1>
         </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>|</li>
-            <li><a href="events.html">Events</a></li>
-            <li>|</li>
-            <li><a href="about.html">About</a></li>
-            <li>|</li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li>|</li>
-            <li><a href="joinus.html">Join Us</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="divider">|</li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li class="divider">|</li>
+                <li><a href="about.html">About</a></li>
+                <li class="divider">|</li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="divider">|</li>
+                <li><a href="joinus.html">Join Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div id="events-header">
-        <h2 id="events-h2">EVENTS.</h2>
-        <p>
-            Discover a variety of events and activities designed to bring people together, celebrate culture, and build a stronger community. From cultural celebrations and workshops to social gatherings and educational activities, there is something for everyone to enjoy.
-        </p>
+    <main id="events-page">
 
-    </div>
+        <!-- Hero / Section Header -->
+        <section id="events-header">
+            <h2 id="events-h2">EVENTS.</h2>
+            <p>
+                Discover a variety of events and activities designed to bring people together, celebrate culture, and build a stronger community. From cultural celebrations and workshops to social gatherings and educational activities, there is something for everyone to enjoy.
+            </p>
+        </section>
 
-    
+        <!-- Events Cards Grid -->
+        <section id="events">
+            <div class="div-all-event-cards">
 
-    <div id="events-cards">
-
-        <div id="div-all-event-cards">
-
-            <div id="event-card-container">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
+                <!-- Card 1 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/pexels-andromeda99-37800366.jpg" alt="SSK IF Diwali">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">SSK IF DIWALI</h2>
+                        <p class="card-txt">An SSK IF celebration where STK IF will be introduced to the community.</p>
                     </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Saturday 11:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Fittja Aula</p>
+                        </div>
                     </div>
+                    <button class="card-button">Register here</button>
                 </div>
-    
-                <button id="card-button">Register here</button>
+
+                <!-- Card 2 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/tamil-book.png" alt="Tamil for Beginners">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">TAMIL FOR BEGINNERS</h2>
+                        <p class="card-txt">An interactive language workshop, basic script, and cultural phrases.</p>
+                    </div>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Nov 7. 14:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Kista Bibliotek</p>
+                        </div>
+                    </div>
+                    <button class="card-button">Register here</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/Venjanam-traditioanl-foods.jpg" alt="Traditional Virundhu">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">TRADITIONAL VIRUNDHU</h2>
+                        <p class="card-txt">Experience an authentic South Indian feast, featuring regional delicacies, music, and community gathering.</p>
+                    </div>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Saturday 11:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Fittja Aula</p>
+                        </div>
+                    </div>
+                    <button class="card-button">Register here</button>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/pexels-andromeda99-37800366.jpg" alt="Traditional Virundhu">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">TRADITIONAL VIRUNDHU</h2>
+                        <p class="card-txt">An SSK IF celebration where STK IF will be introduced to the community.</p>
+                    </div>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Saturday 11:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Fittja Aula</p>
+                        </div>
+                    </div>
+                    <button class="card-button">Register here</button>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/pexels-andromeda99-37800366.jpg" alt="SSK IF Diwali">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">SSK IF DIWALI</h2>
+                        <p class="card-txt">An SSK IF celebration where STK IF will be introduced to the community.</p>
+                    </div>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Saturday 11:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Fittja Aula</p>
+                        </div>
+                    </div>
+                    <button class="card-button">Register here</button>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="event-card-container">
+                    <img class="event-card-image" src="images/pexels-andromeda99-37800366.jpg" alt="SSK IF Diwali">
+                    <div class="card-txt-container">
+                        <h2 class="card-title">SSK IF DIWALI</h2>
+                        <p class="card-txt">An SSK IF celebration where STK IF will be introduced to the community.</p>
+                    </div>
+                    <div class="card-time-hour-container">
+                        <div class="card-svg-container">
+                            <img class="card-calendar-svg" src="images/fi-rr-calendar.svg" alt="Calendar icon">
+                            <p class="card-hour">Saturday 11:00-16:00</p>
+                        </div>
+                        <div class="card-svg-container">
+                            <img class="card-place-svg" src="images/fi-rr-marker.svg" alt="Location icon">
+                            <p class="card-place">Fittja Aula</p>
+                        </div>
+                    </div>
+                    <button class="card-button">Register here</button>
+                </div>
+
             </div>
-    
-            <div id="event-card-container">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
-                    </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
-                    </div>
-                </div>
-    
-                <button id="card-button">Register here</button>
-            </div>
+        </section>
 
-            <div id="event-card-container">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
-                    </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
-                    </div>
-                </div>
-    
-                <button id="card-button">Register here</button>
-            </div>
+    </main>
 
-            <div id="event-card-container" class="card4">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
-                    </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
-                    </div>
-                </div>
-    
-                <button id="card-button">Register here</button>
-            </div>
-
-            <div id="event-card-container">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
-                    </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
-                    </div>
-                </div>
-    
-                <button id="card-button">Register here</button>
-            </div>
-
-            <div id="event-card-container">
-                <img id="event-card-image" src="images/pexels-andromeda99-37800366.jpg">
-    
-                <div id="card-txt-container">
-                    <h2 id="card-title">SSK IF DIWALI</h2>
-                    <p id="card-txt">
-                        An SSK IF celebration where STK IF will be introduced to the community
-                    </p>
-                </div>
-    
-                <div id="card-time-hour-container">
-                    <div class="card-svg-container">
-                        <img  id="card-calendar-svg" src="images/fi-rr-calendar.svg">
-                        <p id="card-hour">
-                            Saturday 11:00-16:00
-                        </p>
-                    </div>
-                    <div class="card-svg-container">
-                        <img id="card-place-svg" src="images/fi-rr-marker.svg">
-                        <p id="card-place">
-                            Fittja Aula
-                        </p>
-                    </div>
-                </div>
-    
-                <button id="card-button">Register here</button>
-            </div>
-    </div>
-
+    <!-- Footer -->
     <footer id="footer-eventpage">
         <div id="footer-container">
             <ul id="footer-copyright">
@@ -229,14 +190,14 @@
 
             <ul>
                 <li class="footer-heading">Languages</li>
-                <li><span lang="sv"></span>Svenska · English · <span lang="ta">தமிழ்</span></li>
+                <li>Svenska · English · <span lang="ta">தமிழ்</span></li>
             </ul>
         </div>
 
         <div id="footer-disclaimer-container">
             <p id="footer-disclaimer">Student concept project by Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer, Hyper Island. Not affiliated with business.</p>
         </div>
-
     </footer>
+
 </body>
 </html>

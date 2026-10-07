@@ -1,35 +1,292 @@
-body{
-    overflow-x: hidden;
-  
+/* Font Files */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Noto Sans Tamil';
+    src: url("../fonts/NotoSansTamil-VariableFont_wdth-wght.ttf");
 }
 
 
-#events-header{
-    width: 100vw;
-    height: 20vh;
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 1.5vw, 15px);
+    background-color: #fffcf0;
+    color: #141414;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#events-header p{
-    width: 800px;
-    margin-left: 110px;
-    line-height: 1.45;
-    font-size: 15px;
+:lang(ta), :lang(tamil) {
+    font-family: 'Noto Sans Tamil', sans-serif;
 }
 
-#events-h2{
-    margin-top: 160px;
-    margin-left: 110px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#div-all-event-cards{
-    margin-left: 110px;
-    margin-right: 110px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 5%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(65, 65, 65, 0.25);
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    z-index: 100;
 }
 
-footer{
-    margin-top: 40px;
+
+/* Main Content Wrapper */
+main#events-page {
+    margin-top: 100px;
+    flex: 1;
+}
+
+/* Events Header Section */
+#events-header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+#events-h2 {
+    font-size: clamp(32px, 5vw, 36px);
+    font-weight: 800;
+    color: #1C392B;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+#events-header p {
+    font-size: clamp(14px, 2vw, 17px);
+    line-height: 1.6;
+    color: #5B665F;
+    margin: 0;
+}
+
+/* Events Cards Section */
+#events {
+    padding: 30px 5% 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.div-all-event-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Individual Card Styling */
+.event-card-container {
+    background-color: #FFF2DC;
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event-card-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.card-txt-container {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1C392B;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.card-txt {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4A5568;
+    margin: 0 0 16px 0;
+}
+
+/* Date and Location Metadata */
+.card-time-hour-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #2D3748;
+    margin-bottom: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-svg-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-calendar-svg, .card-place-svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.card-hour, .card-place {
+    margin: 0;
+    font-weight: 500;
+}
+
+.card-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFBC12;
+    color: #141414;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+    background-color: #E0A30D;
+}
+
+/* Footer Styling */
+footer#footer-eventpage {
+    background: #FFBC12;
+    padding: 30px 8%;
+    margin-top: auto;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #141414;
+}
+
+li.footer-heading {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+#footer-disclaimer-container {
+    margin-top: 24px;
+    text-align: center;
+}
+
+#footer-disclaimer {
+    font-size: 0.75rem;
+    color: #333333;
+    margin: 0;
+}
+
+/* Media Queries */
+
+/* Tablet Screens (<= 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    main#events-page {
+        margin-top: 130px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    header ul.nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+}
+
+/* Small Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+    main#events-page {
+        margin-top: 140px;
+    }
+
+    #events-header {
+        padding: 20px 16px;
+    }
+
+    #events {
+        padding: 20px 16px 40px;
+    }
+
+    .div-all-event-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-time-hour-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
 }
