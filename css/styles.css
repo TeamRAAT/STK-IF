@@ -107,7 +107,6 @@ header {
         text-decoration: none;
     }
 
-/* Hero Section */
 
 /* Hero Section */
 #hero {
@@ -422,6 +421,7 @@ footer {
     bottom: 0;
     padding: 30px 10%;
     margin: 0;
+    margin-top: 40px;
     height: 85px;
     background: rgb(255, 188, 18);
 }
