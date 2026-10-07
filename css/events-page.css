@@ -1,4 +1,6 @@
-body{
+/* Events page */
+
+main#events-page{
     overflow-x: hidden;
   
 }
@@ -30,6 +32,3 @@ body{
     align-items: center;
 }
 
-footer{
-    margin-top: 40px;
-}

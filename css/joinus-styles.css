@@ -1,9 +1,9 @@
-h1 {
+main#join-page h1 {
     text-align: center;
     font-size: 48px;
 }
 
-body > p {
+main#join-page > p {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -15,6 +15,7 @@ form {
     padding: 30px;
     border-radius: 20px;
 }
+
 label[for="fullname"],
 label[for="email"] {
     display: block;
@@ -30,6 +31,7 @@ label[for="email"] {
     margin-bottom: 20px;
     box-sizing: border-box;
 }
+
 form label:not([for]) {
     display: inline-flex;
     align-items: center;
@@ -37,6 +39,7 @@ form label:not([for]) {
     margin-bottom: 12px;
     gap: 5px;
 }
+
 button {
     width: 100%;
     padding: 14px;
@@ -68,7 +71,7 @@ button:hover {
 }
 
 .join-form-side {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -93,12 +96,12 @@ button:hover {
     width: 100%;
 }
 
-    body {
+    main#join-page {
         padding: 20px;
         padding-bottom: 40px;
     }
 
-    h1 {
+    main#join-page h1 {
         font-size: 36px;
     }
 
