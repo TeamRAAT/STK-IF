@@ -107,28 +107,89 @@ header {
         text-decoration: none;
     }
 
-/* Hero Image */
+/* Hero Section */
 
-    div#hero-image {
-        width: 100vw;
-        margin-top: 100px;
-    }
+/* Hero Section */
+#hero {
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: url("/images/backgroundimage.png")  bottom / cover;
+    margin-top: -110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        div#hero-image img {
-            width: 100%;
-        }
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    width: 100%;
+    margin-top: -80px;
+}
+
+.hero-title {
+    font-size: clamp(50px, 6vw, 60px);
+    font-weight: 700;
+    color: #0B3D18;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: -12px;
+}
+
+.hero-subtitle {
+    font-size: clamp(13px, 2.5vw, 15px);
+    font-weight: 500;
+    color: #626262;
+    margin: 0 0 36px 0;
+    margin-top: 20px;
+}
+
+.hero-logo {
+    width: clamp(180px, 28vw, 200px);
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.button-register {
+    display: inline-block;
+    background-color: #083D16;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button-register:hover {
+    background-color: #052a0e;
+
+   
+} 
 
 /* Main Content */
 
 main {
-    margin: 0 10%;
+    margin: 0;
 }
+
 
 /* Introduction */
 
 section#about {
     text-align: center;
+    background-color: #FFBF00;
+    height: 600px;
 }
+
+#logo-main-aboutsection{
+    width: 100px;
+}
+
 
 h2.tamil-heading {
     color: #A45431;
@@ -136,6 +197,8 @@ h2.tamil-heading {
     line-height: 1.8;
     font-weight: 700;
 }
+
+
 
 .about-section h1 {
     color: #243B32;
@@ -146,10 +209,10 @@ h2.tamil-heading {
 
 .about-description {
     max-width: 650px;
-    margin: 0 auto;
     color: #5B665F;
     font-size: 18px;
     line-height: 1.8;
+    margin: 0 auto;
 }
 
 .about-buttons {
@@ -162,11 +225,11 @@ h2.tamil-heading {
 
 .button {
     display: inline-block;
-    padding: 14px 24px;
+    padding: 10px 32px;
     border: 2px solid #294F3E;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     line-height: 1.4;
     text-decoration: none;
 }
@@ -302,20 +365,21 @@ h1 {
 }
 
 #card-button{
-    padding: 8px;
+    padding: 10px;
+    margin-top: 10px;
     background-color: rgb(255, 188, 18);
     border-style: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 /* Footer */
 
 footer {
     bottom: 0;
-    padding: 20px 10%;
+    padding: 30px 10%;
     margin: 0;
-    height: 65px;
+    height: 85px;
     background: rgb(255, 188, 18);
 }
 
@@ -357,6 +421,8 @@ footer {
             display: block;
             text-align: center;
             font-size: 0.75rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
 
         div#footer-disclaimer-container {
@@ -432,7 +498,7 @@ div#hero-image {
     }
 
     .button {
-        width: 100%;
+     
         max-width: 280px;
     }
 
