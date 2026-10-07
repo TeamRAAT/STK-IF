@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+  
+}
+
+
+#events-header{
+    width: 100vw;
+    height: 20vh;
+}
+
+#events-header p{
+    width: 800px;
+    margin-left: 110px;
+    line-height: 1.45;
+    font-size: 15px;
+}
+
+#events-h2{
+    margin-top: 160px;
+    margin-left: 110px;
+}
+
+#div-all-event-cards{
+    margin-left: 110px;
+    margin-right: 110px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    margin-top: 40px;
+}
