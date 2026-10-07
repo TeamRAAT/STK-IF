@@ -15,7 +15,6 @@ section#gallery {
 }
 
   div.gallery-image-container {
-    width: 150px;
     margin: 0 10px 10px 0;
     display: inline-block;
     width: 100%;
