@@ -71,8 +71,9 @@ main#index {
 
 section#about {
     text-align: center;
-    background-color: #ebebeb;
-    height: 600px;
+    background-color: #ffffff;
+    height: clamp(500px,2vh,600px);
+
 }
 
 #logo-main-aboutsection{
@@ -85,10 +86,8 @@ h2.tamil-heading {
     font-size: clamp(20px, 3vw, 40px);
     line-height: 1.8;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
 }
-
-
 
 .about-section h1 {
     color:#052a0e;
@@ -157,7 +156,9 @@ h2.tamil-heading {
 
 .about-introduction {
     margin-top: 56px;
+    margin-bottom: 56px;
     padding-top: 36px;
+
 }
 
 .introduction-heading {
@@ -171,7 +172,7 @@ h2.tamil-heading {
 /* Activities */
 
 #activities{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     min-height: 100px;
     margin-bottom: 80px;
 }
