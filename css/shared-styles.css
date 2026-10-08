@@ -87,12 +87,14 @@ header {
     header #logo {
         display: flex;
         align-items: center;
-        height: 70px;
+        align-items: center;
+        gap: 12px;
+        height: 100%;
     }
 
         header #logo img {
-            height: 100%;
-            padding-right: 10px;
+            height: 50px;
+            width: auto;
         }
 
     header h1 {
@@ -129,6 +131,14 @@ header {
         color: #FFBF00;
         text-decoration: none;
     }
+
+#hamburguer-buttom{
+        display: none;
+        height: auto;
+        cursor: pointer;
+
+    }
+    
 
     /* Footer */
 
@@ -201,34 +211,52 @@ body {
 /* Header */
 
 header {
-    padding: 10px 10px;
-    margin-top: 0px;
+    padding: 10px 20px;
     height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
-    header #logo {
-        top: 0px;
-        min-height: 20px;
-        max-height: 50px;
-    }
-    header h1 {
-        display: none;
-    }
 
-    header ul li {
-        font-size: 0.8rem;
-        text-align: center;
-        padding: 5px;
+header #logo {
+    height: 50px;
+}
+
+header ul {
+    display: none !important;
+}
+
+header h1 {
+    display: none;
+}
+
+#hamburguer-buttom {
+    display: block !important;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px !important;
+    height: auto !important;
+    max-width: 25px !important;
+    margin: 0 !important;
     }
 }
+
 
 /* Less than or equal to 600px */
 @media (max-width: 600px) {
 
         header ul li {
         font-size: 0.6rem;
+        display: none;
+    }
+
+    #hamburguer-buttom{
+        display: block;
+        
     }
 
 /* Footer */
