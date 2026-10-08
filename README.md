@@ -1,5 +1,8 @@
 # STK IF DEMO WEBSITE
 
+## DESCRIPTION
+This is a demo website for Stockholm Tamil Kultur IF aka STK IF. STK IF is a Tamil cultural and sports club taking shape in Stockholm, bringing together culture, sport and community for every generation.
+
 ## AUTHORS
 
 Team RAAT: 
