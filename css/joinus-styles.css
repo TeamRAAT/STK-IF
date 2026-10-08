@@ -1,6 +1,5 @@
 main#join-page h1 {
     text-align: center;
-    font-size: 48px;
 }
 
 main#join-page > p {
@@ -14,6 +13,7 @@ form {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgb(207, 206, 199)
 }
 
 label[for="fullname"],
@@ -57,9 +57,9 @@ button:hover {
 }
 
 .join-page {
-    padding-top: 120px;
+    padding: 0 30px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 120px auto 0px;
     display: flex;
     gap: 80px;
     align-items: flex-start;
@@ -67,7 +67,6 @@ button:hover {
 
 .join-info {
     width: 50%;
-    font-size: 24px;
 }
 
 .join-form-side {
@@ -80,16 +79,15 @@ button:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
 
     .join-page {
     padding-top: 100px;
     width: 100%;
     margin-top: 60px;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
-
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
@@ -100,31 +98,20 @@ button:hover {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 0px;
 }
 
 .join-form-side {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-
-
-.join-info h2 {
-    font-size: 26px;
-}
-
-.join-info p {
-    font-size: 14px;
-}
+    text-align: center;
 
 }
 
     main#join-page {
         padding: 20px;
         padding-bottom: 40px;
-    }
-
-    main#join-page h1 {
-        font-size: 36px;
     }
 
     form {
@@ -145,5 +132,13 @@ button:hover {
 
 .join-page {
     padding-top: 60px;
+}
+
+section#membership {
+    padding-bottom: 10px;
+}
+
+section#volunteer-info {
+    padding-bottom: 10px;
 }
 }

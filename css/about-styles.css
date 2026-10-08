@@ -17,10 +17,10 @@ main#about-page {
     box-sizing: border-box;
 }
 
-#about-header {
+.about-header {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0px 20px 20px;
+    padding: 0px 20px 0px;
     text-align: center;
     flex: 1;
 }
@@ -28,17 +28,19 @@ main#about-page {
 
 .about-section {
     text-align: center;
+    padding-bottom: 0;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    padding 0px 20px 0px;
 }
 
 .about-lead {
     font-size: 1.15rem;
     color: #0d1117;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 section#main-container {

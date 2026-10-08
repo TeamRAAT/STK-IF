@@ -72,20 +72,13 @@ main#index {
 section#about {
     text-align: center;
     background-color: #ebebeb;
-    height: 600px;
+    height: fit-content;
+    margin-bottom: 80px;
+    padding: 0px 20px 40px;
 }
 
 #logo-main-aboutsection{
     width: 110px;
-}
-
-
-h2.tamil-heading {
-    color: rgb(210, 155, 14);;
-    font-size: clamp(20px, 3vw, 40px);
-    line-height: 1.8;
-    font-weight: 700;
-    margin-top: 20px;
 }
 
 
@@ -174,16 +167,22 @@ h2.tamil-heading {
     background-color: rgb(241, 241, 241);
     min-height: 100px;
     margin-bottom: 80px;
+    padding: 5px 20px 50px;
 }
+
 
  #activities h1 {
     font-size: 30px;
-    padding-top: 60px;
+    padding: 20px;
     text-align: center;
     font-weight: 700;
     color: #083D16;
-    margin-bottom: 0;
-    margin-top: 80px;
+    margin-bottom: 0p;
+    margin-top: 40px;
+}
+
+ #activities h2 {
+    font-size: 1.5rem;
 }
 
 .activity-card {
@@ -192,14 +191,14 @@ h2.tamil-heading {
     padding: 18px;
     width: 220px;
     max-height: 340px;
-    box-shadow: 0 4px 8px rgb(182, 182, 182);
+    box-shadow: 0 4px 8px rgb(207, 206, 199);
 }
 
 .activity-card-container {
     display: flex;
     gap: 12px;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .activity-card-image {
@@ -235,9 +234,6 @@ div#hero-image {
 
 /* Introduction */
 
-    .about-section {
-        padding: 40px 20px;
-    }
 
     .about-description {
         font-size: 16px;

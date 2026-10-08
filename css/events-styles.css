@@ -52,13 +52,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 8px rgb(207, 206, 199);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .event-card-container:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 20px rgb(207, 206, 199);
 }
 
 .event-card-image {
