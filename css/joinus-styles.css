@@ -67,6 +67,7 @@ button:hover {
 
 .join-info {
     width: 50%;
+    font-size: 24px;
 }
 
 .join-form-side {
@@ -82,16 +83,39 @@ button:hover {
 @media (max-width: 600px) {
 
     .join-page {
-    padding-top: 60px;
+    padding-top: 100px;
     width: 100%;
-    margin: 0;
+    margin-top: 60px;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
 }
 
-.join-info,
+.join-info {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .join-form-side {
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+
+.join-info h2 {
+    font-size: 26px;
+}
+
+.join-info p {
+    font-size: 14px;
+}
+
 }
 
     main#join-page {
