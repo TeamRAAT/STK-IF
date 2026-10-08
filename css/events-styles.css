@@ -32,6 +32,10 @@ a {
     margin: 0 auto;
 }
 
+#events-h2{
+    font-size: 30px;
+}
+
 .div-all-event-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

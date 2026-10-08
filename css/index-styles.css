@@ -81,7 +81,7 @@ section#about {
 
 
 h2.tamil-heading {
-    color: #A45431;
+    color: rgb(210, 155, 14);;
     font-size: clamp(20px, 3vw, 40px);
     line-height: 1.8;
     font-weight: 700;
@@ -162,7 +162,7 @@ h2.tamil-heading {
 
 .introduction-heading {
     margin: 0 0 20px;
-    color: #243B32;
+    color: #083D16;
     font-size: clamp(24px, 4vw, 36px);
     font-weight: 700;
     line-height: 1.4;

@@ -44,8 +44,8 @@ main {
 
 h1 {
     font-size: clamp(32px, 5vw, 36px);
-    font-weight: 800;
-    color: #1C392B;
+    font-weight: 700;
+    color: #083D16;
     margin: 0;
     margin-bottom: 16px;
     letter-spacing: -1px;
