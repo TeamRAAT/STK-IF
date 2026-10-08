@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(210, 155, 14);;
+    color: rgb(180, 129, 0);;
     font-size: clamp(20px, 2vw, 40px);
     line-height: 1.8;
     font-weight: 700;
