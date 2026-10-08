@@ -150,7 +150,9 @@ section#about {
 
 .about-introduction {
     margin-top: 56px;
+    margin-bottom: 56px;
     padding-top: 36px;
+
 }
 
 .introduction-heading {
@@ -164,7 +166,7 @@ section#about {
 /* Activities */
 
 #activities{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     min-height: 100px;
     margin-bottom: 80px;
     padding: 5px 20px 50px;
