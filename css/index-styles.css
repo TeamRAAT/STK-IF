@@ -71,10 +71,6 @@ main#index {
 
 section#about {
     text-align: center;
-    background-color: #fff;
-    height: fit-content;
-    margin-bottom: 80px;
-    padding: 0px 20px 40px;
 }
 
 #logo-main-aboutsection{
@@ -149,9 +145,8 @@ section#about {
 }
 
 .about-introduction {
-    margin-top: 56px;
-    margin-bottom: 56px;
-    padding-top: 36px;
+    padding-top: 56px;
+    padding-bottom: 36px;
 
 }
 
@@ -166,9 +161,9 @@ section#about {
 /* Activities */
 
 #activities{
-    background-color: rgb(255, 255, 255);
+    background-color: #FFF2DC;
     min-height: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     padding: 5px 20px 50px;
 }
 
