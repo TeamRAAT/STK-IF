@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Members · Stockholm Tamil Kultur IF</title>
+    <link rel="stylesheet" href="css/shared-styles.css">
+    <link rel="stylesheet" href="css/members-styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme-css">
+    <link rel="stylesheet" href="css/mascots.css">
+</head>
+
+<body>
+
+<!-- Header-->
+
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="Stockholm Tamil Kultur IF Logo">
+            <h1>STK IF</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li><a href="events.html">Events</a></li>
+            <li>|</li>
+            <li><a href="about.html">About</a></li>
+            <li>|</li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>|</li>
+            <li><a href="learn-tamil.html">Learn Tamil</a></li>
+            <li>|</li>
+            <li><a href="members.html" aria-current="page">Members</a></li>
+            <li>|</li>
+            <li><a href="joinus.html">Join Us</a></li>
+        </ul>
+        <img id="hamburguer-buttom" src="images/hamburg.button.svg" alt="Hamburger menu button">
+
+    </header>
+
+<!-- Main Content -->
+
+<main id="members-page">
+
+<!-- Members intro -->
+
+    <section id="members-intro">
+        <span class="heading-mascot" data-mascot="members-heading"></span>
+        <h1>Members</h1>
+        <p class="members-lead">Meet the people who run STK IF. Get in touch with any of us, we're happy to help.</p>
+    </section>
+
+<!-- Members list -->
+<!-- The cards are built automatically from the "members" folder. See members/README.md to add or remove a member. -->
+
+    <section id="members" aria-live="polite">
+        <p class="members-loading">Loading members…</p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+
+    <footer id="footer-eventpage">
+        <div id="footer-container">
+            <ul id="footer-copyright">
+                <li class="footer-heading">© 2026 Stockholm Tamil Kultur IF</li>
+            </ul>
+
+            <ul id="footer-info">
+                <li class="footer-heading">Location</li>
+                <li>Stockholm, Sweden</li>
+            </ul>
+
+
+            <ul>
+                <li class="footer-heading">Languages</li>
+                <li><span lang="sv"></span>Svenska · English · <span lang="ta">தமிழ்</span></li>
+            </ul>
+        </div>
+
+        <div id="footer-disclaimer-container">
+            <p id="footer-disclaimer">Student concept project by Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer, Hyper Island. Not affiliated with business.</p>
+        </div>
+
+    </footer>
+
+<!-- Member data: the list of folders first, then the script that loads each folder -->
+    <script src="members/members-list.js"></script>
+    <script src="js/members.js"></script>
+
+    <script src="lang/languages.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="mascots/mascot-list.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

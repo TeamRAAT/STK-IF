@@ -8,9 +8,16 @@
     <link rel="stylesheet" href="css/shared-styles.css">
     <link rel="stylesheet" href="css/index-styles.css">
     <link rel="stylesheet" href="css/events-styles.css">
+    <link rel="stylesheet" href="css/poster-styles.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme-css">
+    <link rel="stylesheet" href="css/mascots.css">
 </head>
 <body>
+
+<!-- Event poster popup -->
+<div id="poster-overlay"></div>
 
 <!-- Header-->
 
@@ -30,6 +37,10 @@
             <li>|</li>
             <li><a href="gallery.html">Gallery</a></li>
             <li>|</li>
+            <li><a href="learn-tamil.html">Learn Tamil</a></li>
+            <li>|</li>
+            <li><a href="members.html">Members</a></li>
+            <li>|</li>
             <li><a href="joinus.html">Join Us</a></li>
         </ul>
 
@@ -37,6 +48,7 @@
 
 <!-- Hero Image-->
     <section id="hero">
+        <div class="hero-slideshow" aria-hidden="true"></div>
         <div class="hero-container">
             <h1 class="hero-title">Tamil roots</h1>
             <p class="hero-subtitle">Culture, sport and community in Stockholm</p>
@@ -46,6 +58,11 @@
             <div class="hero-buttons">
                 <a class="button button-register" href="joinus.html">Register</a>
             </div>
+        </div>
+
+        <!-- Mascot: the Nilgiri tahr says hello (pictures in the "mascots" folder) -->
+        <div class="hero-mascot" data-mascot="home-hero">
+            <span class="mascot-bubble">Vanakkam! Welcome to STK IF</span>
         </div>
     </section>
 <!-- Main Content -->
@@ -70,6 +87,7 @@
 
     <section id="activities">
 
+        <span class="activities-mascot" data-mascot="home-activities"></span>
         <h1>A place for every part of you</h1>
 
         <div class="activity-card-container">
@@ -190,10 +208,6 @@
                 <li>Stockholm, Sweden</li>
             </ul>
 
-            <ul>
-                <li class="footer-heading">Contact</li>
-                <li><a href="mailto:info@stkif.se">info@stkif.se</a></li>
-            </ul>
 
             <ul>
                 <li class="footer-heading">Languages</li>
@@ -207,5 +221,11 @@
 
     </footer>
 
+    <script src="js/slideshow.js"></script>
+    <script src="js/poster.js"></script>
+    <script src="lang/languages.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="mascots/mascot-list.js"></script>
+    <script src="js/site.js"></script>
 </body>
 </html>
