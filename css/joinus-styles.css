@@ -17,14 +17,20 @@ form {
 }
 
 label[for="fullname"],
-label[for="email"] {
+label[for="email"],
+label[for="phone"],
+label[for="dob"],
+label[for="gender"] {
     display: block;
     margin-bottom: 8px;
 }
 
 #fullname,
 #email ,
-#phone {
+#phone,
+#dob,
+#gender,
+#gender-other {
     display: block;
     width: 100%;
     padding: 12px;
@@ -121,7 +127,11 @@ button:hover {
     }
 
     #fullname,
-    #email {
+    #email,
+    #phone,
+    #dob,
+    #gender,
+    #gender-other {
         width: 100%;
     }
 
@@ -141,4 +151,28 @@ section#membership {
 section#volunteer-info {
     padding-bottom: 10px;
 }
+}
+
+/* Form status message */
+#form-status {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#form-status.success {
+    color: #1e6b3a;
+}
+
+#form-status.error {
+    color: #b3261e;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+#gender-other[hidden] {
+    display: none;
 }

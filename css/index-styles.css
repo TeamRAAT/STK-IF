@@ -16,9 +16,46 @@ main#index {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    position: relative;
+}
+
+/* Hero slideshow (images come from the "slideshow" folder) */
+.hero-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-slideshow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 252, 240, 0.6);
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Visitors who prefer less motion get an instant switch instead of a fade */
+@media (prefers-reduced-motion: reduce) {
+    .hero-slide {
+        transition: none;
+    }
 }
 
 .hero-container {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,8 +75,9 @@ main#index {
 
 .hero-subtitle {
     font-size: clamp(13px, 2.5vw, 15px);
-    font-weight: 500;
-    color: #626262;
+    font-weight: 600;
+    color: #2f2f2f;
+    text-shadow: 0 0 8px rgba(255, 252, 240, 0.9);
     margin: 0 0 36px 0;
     margin-top: 20px;
 }
