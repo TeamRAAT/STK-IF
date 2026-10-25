@@ -318,5 +318,11 @@ window.STK_TRANSLATIONS.sv = {
     "Forest trek":
         "Skogsvandring",
     "Grill and potluck at Lida":
-        "Grill och knytkalas på Lida"
+        "Grill och knytkalas på Lida",
+    "KARAOKE & GAMES DAY":
+        "KARAOKE- & SPELDAG",
+    "Sing your favourite songs and play carrom and other games. Fun for all ages.":
+        "Sjung dina favoritlåtar och spela carrom och andra spel. Kul för alla åldrar.",
+    "Date to be announced":
+        "Datum meddelas senare"
 };

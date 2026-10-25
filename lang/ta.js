@@ -318,5 +318,11 @@ window.STK_TRANSLATIONS.ta = {
     "Forest trek":
         "காட்டு நடைப்பயணம்",
     "Grill and potluck at Lida":
-        "லிடாவில் கிரில் & பகிர்வு விருந்து"
+        "லிடாவில் கிரில் & பகிர்வு விருந்து",
+    "KARAOKE & GAMES DAY":
+        "கரோக்கி & விளையாட்டு நாள்",
+    "Sing your favourite songs and play carrom and other games. Fun for all ages.":
+        "உங்களுக்குப் பிடித்த பாடல்களைப் பாடுங்கள், கேரம் மற்றும் பிற விளையாட்டுகளை விளையாடுங்கள். எல்லா வயதினருக்கும் கொண்டாட்டம்.",
+    "Date to be announced":
+        "தேதி பின்னர் அறிவிக்கப்படும்"
 };
