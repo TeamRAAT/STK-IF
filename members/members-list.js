@@ -8,8 +8,14 @@
 // Folder names: lowercase letters, numbers and dashes only, e.g. "05-sports-lead".
 
 window.MEMBER_FOLDERS = [
-    "01-president",
-    "02-vice-president",
-    "03-secretary",
-    "04-treasurer"
+    "01-chairman",
+    "02-secretary",
+    "03-treasurer",
+    "04-sports-head",
+    "05-cultural-head",
+    "06-shyam",
+    "07-radhakrishnan",
+    "08-renugadevi",
+    "09-devipriya",
+    "10-saheena"
 ];

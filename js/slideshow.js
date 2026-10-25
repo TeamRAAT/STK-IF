@@ -12,11 +12,7 @@ const SLIDE_FILES = [
     "slide-2.jpg",
     "slide-4.jpg",
     "slide-5.jpg",
-    "slide-6.jpg",
-    "slide-7.jpg",
-    "slide-8.jpg",
-    "slide-9.jpg",
-    "slide-10.jpg"
+    "slide-6.jpg"
 ];
 const SLIDE_SECONDS = 5;      // time each picture stays on screen
 const RANDOM_ORDER = true;    // true = shuffled on every visit, false = order of the list

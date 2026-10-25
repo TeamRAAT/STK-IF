@@ -9,7 +9,7 @@ const CONFIG = {
         email: "entry.928234848",
         phone: "entry.1662124608",
         dob: "entry.790732369",               // Date question
-        gender: "entry.1035762172",         // Multiple choice question
+        gender: "entry.1035762172",         // Multiple choice question (no longer asked on the website, see below)
         activities: "entry.1446018950"  // Checkboxes question
     }
 };
@@ -17,19 +17,9 @@ const CONFIG = {
 const form = document.getElementById("joinForm");
 const statusMessage = document.getElementById("form-status");
 const submitButton = form.querySelector('button[type="submit"]');
-const genderSelect = document.getElementById("gender");
-const genderOther = document.getElementById("gender-other");
 
 // Date of birth can't be in the future
 document.getElementById("dob").max = new Date().toISOString().split("T")[0];
-
-// Show a text box when "Other" is chosen
-genderSelect.addEventListener("change", function () {
-    const isOther = genderSelect.value === "Other";
-    genderOther.hidden = !isOther;
-    genderOther.required = isOther;
-    if (!isOther) genderOther.value = "";
-});
 
 // Messages follow the chosen language (translations are in the lang folder)
 function tr(text) {
@@ -61,20 +51,26 @@ form.addEventListener("submit", async function (event) {
     }
 
     const data = new FormData(form);
+
+    // The Google Form requires at least one activity
+    if (data.getAll("activities").length === 0) {
+        showStatus("Please choose at least one activity.", "error");
+        return;
+    }
     const body = new URLSearchParams();
 
     body.append(CONFIG.entries.fullname, data.get("fullname").trim());
     body.append(CONFIG.entries.email, data.get("email").trim());
-    body.append(CONFIG.entries.phone, data.get("phone").trim());
+    // The Google Form has one phone question, so the WhatsApp number goes in it too
+    const phone = data.get("phone").trim();
+    const whatsapp = (data.get("whatsapp") || "").trim();
+    body.append(CONFIG.entries.phone, whatsapp ? phone + " (WhatsApp: " + whatsapp + ")" : phone);
 
-    // Gender: Google's "Other:" option needs a special value + text
-    if (data.get("gender") === "Other") {
-        body.append(CONFIG.entries.gender, "__other_option__");
-        body.append(CONFIG.entries.gender + ".other_option_response",
-            (data.get("gender-other") || "Other").trim());
-    } else {
-        body.append(CONFIG.entries.gender, data.get("gender"));
-    }
+    // Gender is no longer asked. Until the question is made optional in the
+    // Google Form, answer it with "Other: Not asked" so the form still accepts the entry.
+    // Once it is optional (or deleted), remove these two lines.
+    body.append(CONFIG.entries.gender, "__other_option__");
+    body.append(CONFIG.entries.gender + ".other_option_response", "Not asked");
 
     // Google Forms expects dates as separate year / month / day values
     const [year, month, day] = data.get("dob").split("-");
@@ -102,7 +98,6 @@ form.addEventListener("submit", async function (event) {
         });
 
         form.reset();
-        genderOther.hidden = true;
         showStatus("Thank you! Your details have been sent.", "success");
     } catch (error) {
         showStatus("Something went wrong. Please try again later.", "error");

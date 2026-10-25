@@ -192,19 +192,6 @@ footer {
             font-weight: 700;
         }
     
-        p#footer-disclaimer {
-            display: block;
-            text-align: center;
-            font-size: 0.75rem;
-            margin-top: 30px;
-                color: #FFF;
-            margin-bottom: 10px;
-        }
-
-        div#footer-disclaimer-container {
-            display: block;
-            margin: 0;
-        }
 
 /* Media Queries */
 

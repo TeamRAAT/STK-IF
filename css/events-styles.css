@@ -69,6 +69,11 @@ a {
     margin-bottom: 14px;
 }
 
+/* Event posters are portrait: show the title area */
+.event-card-poster {
+    object-position: center 42%;
+}
+
 .card-txt-container {
     flex-grow: 1;
 }
@@ -119,7 +124,11 @@ a {
 }
 
 .card-button {
+    display: block;
+    box-sizing: border-box;
     width: 100%;
+    text-align: center;
+    text-decoration: none;
     padding: 12px;
     background-color: #FFBC12;
     font-family: inherit;

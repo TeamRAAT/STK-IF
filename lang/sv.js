@@ -61,6 +61,8 @@ window.STK_TRANSLATIONS.sv = {
         "TAMIL FÖR NYBÖRJARE",
     "An interactive language workshop, basic script, and cultural phrases.":
         "En interaktiv språkworkshop med grundläggande skrift och kulturella fraser.",
+    "Nov 7. 11:00-16:00":
+        "7 nov. 11:00–16:00",
     "Nov 7. 14:00-16:00":
         "7 nov. 14:00–16:00",
     "Kista Bibliotek":
@@ -75,8 +77,6 @@ window.STK_TRANSLATIONS.sv = {
         "Stockholm, Sverige",
     "Languages":
         "Språk",
-    "Student concept project by Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer, Hyper Island. Not affiliated with business.":
-        "Studentkonceptprojekt av Adam Aref, Anette Essel, Taiane Farias och Rubiya Jaffer, Hyper Island. Ej kopplat till någon verksamhet.",
     "Stockholm Tamil Kultur IF Logo":
         "Stockholm Tamil Kultur IF:s logotyp",
     "STK IF Circular Logo":
@@ -272,5 +272,51 @@ window.STK_TRANSLATIONS.sv = {
     "Previous":
         "Föregående",
     "Next":
-        "Nästa"
+        "Nästa",
+
+    // Added October 2026
+    "PONGAL THIRUVIZHA":
+        "PONGAL THIRUVIZHA",
+    "Celebrate the Tamil harvest festival together: pongal, kolam, music and games for the whole family.":
+        "Fira den tamilska skördefesten tillsammans: pongal, kolam, musik och lekar för hela familjen.",
+    "End of January 2027":
+        "Slutet av januari 2027",
+    "Venue to be announced":
+        "Plats meddelas senare",
+    "Follow us":
+        "Följ oss",
+    "<strong>Registration is open!</strong> Fill in the form to become a member, and we will contact you about the next steps.":
+        "<strong>Anmälan är öppen!</strong> Fyll i formuläret för att bli medlem, så kontaktar vi dig om nästa steg.",
+    "Tick <strong>Volunteering</strong> in the form and we will get in touch.":
+        "Kryssa i <strong>Volontärarbete</strong> i formuläret så hör vi av oss.",
+    "Mobile Number":
+        "Mobilnummer",
+    "WhatsApp Number (if different)":
+        "WhatsApp-nummer (om annat)",
+    "I agree that Stockholm Tamil Kultur IF may store these details to handle my membership and contact me about club activities. They are never shared, and I can ask for them to be deleted at any time.":
+        "Jag godkänner att Stockholm Tamil Kultur IF sparar dessa uppgifter för att hantera mitt medlemskap och kontakta mig om föreningens aktiviteter. De delas aldrig, och jag kan när som helst be om att de raderas.",
+    "Please choose at least one activity.":
+        "Välj minst en aktivitet.",
+    "Chairman":
+        "Ordförande",
+    "Sports Head":
+        "Idrottsansvarig",
+    "Cultural Head":
+        "Kulturansvarig",
+    "Board Members":
+        "Styrelseledamöter",
+    "SSK 10-year celebration":
+        "SSK:s 10-årsjubileum",
+    "SSK dance team, 2025":
+        "SSK:s dansgrupp, 2025",
+    "Skärholmen Loppet 2026":
+        "Skärholmsloppet 2026",
+    "Carrom tournament":
+        "Carromturnering",
+    "Karaoke Day, June 2026":
+        "Karaokedag, juni 2026",
+    "Forest trek":
+        "Skogsvandring",
+    "Grill and potluck at Lida":
+        "Grill och knytkalas på Lida"
 };

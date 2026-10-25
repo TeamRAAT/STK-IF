@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Stockholm Tamil Kultur IF</title>
+    <meta name="description" content="Become a member or volunteer with Stockholm Tamil Kultur IF.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Stockholm Tamil Kultur IF">
+    <meta property="og:title" content="Join Us · Stockholm Tamil Kultur IF">
+    <meta property="og:description" content="Become a member or volunteer with Stockholm Tamil Kultur IF.">
+    <meta property="og:url" content="https://teamraat.github.io/STK-IF/joinus.html">
+    <meta property="og:image" content="https://teamraat.github.io/STK-IF/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="css/shared-styles.css">
     <link rel="stylesheet" href="css/joinus-styles.css">
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/modern.css">
     <link rel="stylesheet" href="css/theme.css" id="theme-css">
     <link rel="stylesheet" href="css/mascots.css">
@@ -19,7 +29,7 @@
 
     <header>
         <div id="logo">
-            <img src="images/logo.png" alt="Stockholm Tamil Kultur IF Logo">
+            <img src="images/logo.webp" alt="Stockholm Tamil Kultur IF Logo">
             <h1>STK IF</h1>
         </div>
         <ul>
@@ -55,10 +65,8 @@
         </p>
 
         <p>
-            <strong>Membership interest registration is not open yet.</strong>
-            The registration process, any fees and privacy information are
-            being finalised. This page will carry the registration link once
-            it is approved.
+            <strong>Registration is open!</strong> Fill in the form to become
+            a member, and we will contact you about the next steps.
         </p>
     </section>
 
@@ -71,7 +79,7 @@
         </p>
 
         <p>
-            <strong>Volunteer interest registration will open alongside membership.</strong>
+            Tick <strong>Volunteering</strong> in the form and we will get in touch.
         </p>
     </section>
 
@@ -94,20 +102,14 @@
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required>
+    <label for="phone">Mobile Number</label>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+    <label for="whatsapp">WhatsApp Number (if different)</label>
+    <input type="tel" id="whatsapp" name="whatsapp">
 
     <label for="dob">Date of Birth</label>
     <input type="date" id="dob" name="dob" required>
-
-    <label for="gender">Gender</label>
-    <select id="gender" name="gender" required>
-        <option value="" disabled selected>Select gender</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Other">Other</option>
-    </select>
-    <input type="text" id="gender-other" name="gender-other" placeholder="Please specify" hidden>
 
     <p>Select Activities</p>
 
@@ -134,6 +136,11 @@
     <label>
         <input type="checkbox" name="activities" value="Volunteering">
         Volunteering
+    </label>
+
+    <label class="consent">
+        <input type="checkbox" id="consent" name="consent" required>
+        I agree that Stockholm Tamil Kultur IF may store these details to handle my membership and contact me about club activities. They are never shared, and I can ask for them to be deleted at any time.
     </label>
 
     <button type="submit">Join Us</button>
@@ -168,10 +175,11 @@
                 <li class="footer-heading">Languages</li>
                 <li><span lang="sv"></span>Svenska · English · <span lang="ta">தமிழ்</span></li>
             </ul>
-        </div>
-
-        <div id="footer-disclaimer-container">
-            <p id="footer-disclaimer">Student concept project by Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer, Hyper Island. Not affiliated with business.</p>
+            <ul id="footer-social">
+                <li class="footer-heading">Follow us</li>
+                <li><a href="https://www.instagram.com/sskvibessweden" target="_blank" rel="noopener" data-icon="instagram">Instagram</a></li>
+                <li><a href="https://www.facebook.com/StockholmSuperKings" target="_blank" rel="noopener" data-icon="facebook">Facebook</a></li>
+            </ul>
         </div>
 
     </footer>

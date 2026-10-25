@@ -7,9 +7,7 @@
 
 const POSTER_FOLDER = "posters/";
 const POSTER_FILES = [
-    "poster-1.jpg",
-    "poster-2.jpg",
-    "poster-3.jpg"
+    "poster-1.jpg"
 ];
 
 (function () {

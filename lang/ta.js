@@ -61,6 +61,8 @@ window.STK_TRANSLATIONS.ta = {
         "தொடக்க நிலை தமிழ்",
     "An interactive language workshop, basic script, and cultural phrases.":
         "அடிப்படை எழுத்துகள், பண்பாட்டுச் சொற்றொடர்களுடன் ஒரு கலந்துரையாடல் மொழிப் பயிலரங்கு.",
+    "Nov 7. 11:00-16:00":
+        "நவம்பர் 7. 11:00–16:00",
     "Nov 7. 14:00-16:00":
         "நவம்பர் 7. 14:00–16:00",
     "Kista Bibliotek":
@@ -75,8 +77,6 @@ window.STK_TRANSLATIONS.ta = {
         "ஸ்டாக்ஹோம், சுவீடன்",
     "Languages":
         "மொழிகள்",
-    "Student concept project by Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer, Hyper Island. Not affiliated with business.":
-        "Adam Aref, Anette Essel, Taiane Farias, Rubiya Jaffer (Hyper Island) உருவாக்கிய மாணவர் கருத்துத் திட்டம். எந்த வணிகத்துடனும் தொடர்பில்லை.",
     "Stockholm Tamil Kultur IF Logo":
         "ஸ்டாக்ஹோம் தமிழ் கலாச்சார IF சின்னம்",
     "STK IF Circular Logo":
@@ -272,5 +272,51 @@ window.STK_TRANSLATIONS.ta = {
     "Previous":
         "முந்தையது",
     "Next":
-        "அடுத்தது"
+        "அடுத்தது",
+
+    // Added October 2026
+    "PONGAL THIRUVIZHA":
+        "பொங்கல் திருவிழா",
+    "Celebrate the Tamil harvest festival together: pongal, kolam, music and games for the whole family.":
+        "தமிழர் அறுவடைத் திருநாளை ஒன்றாகக் கொண்டாடுவோம்: பொங்கல், கோலம், இசை, குடும்பம் முழுவதற்குமான விளையாட்டுகள்.",
+    "End of January 2027":
+        "ஜனவரி 2027 இறுதியில்",
+    "Venue to be announced":
+        "இடம் பின்னர் அறிவிக்கப்படும்",
+    "Follow us":
+        "எங்களைப் பின்தொடருங்கள்",
+    "<strong>Registration is open!</strong> Fill in the form to become a member, and we will contact you about the next steps.":
+        "<strong>பதிவு தொடங்கிவிட்டது!</strong> உறுப்பினராகப் படிவத்தை நிரப்புங்கள்; அடுத்த படிகள் பற்றி நாங்கள் உங்களைத் தொடர்புகொள்வோம்.",
+    "Tick <strong>Volunteering</strong> in the form and we will get in touch.":
+        "படிவத்தில் <strong>தன்னார்வப் பணி</strong> என்பதைத் தேர்ந்தெடுங்கள்; நாங்கள் உங்களைத் தொடர்புகொள்வோம்.",
+    "Mobile Number":
+        "கைபேசி எண்",
+    "WhatsApp Number (if different)":
+        "WhatsApp எண் (வேறாக இருந்தால்)",
+    "I agree that Stockholm Tamil Kultur IF may store these details to handle my membership and contact me about club activities. They are never shared, and I can ask for them to be deleted at any time.":
+        "எனது உறுப்பினர் சேர்க்கையைக் கையாளவும் சங்க நிகழ்வுகள் பற்றி என்னைத் தொடர்புகொள்ளவும் Stockholm Tamil Kultur IF இந்த விவரங்களைச் சேமிக்க ஒப்புக்கொள்கிறேன். இவை யாருடனும் பகிரப்படாது; எப்போது வேண்டுமானாலும் அவற்றை நீக்கக் கோரலாம்.",
+    "Please choose at least one activity.":
+        "குறைந்தது ஒரு செயல்பாட்டைத் தேர்ந்தெடுங்கள்.",
+    "Chairman":
+        "தலைவர்",
+    "Sports Head":
+        "விளையாட்டுப் பொறுப்பாளர்",
+    "Cultural Head":
+        "கலாச்சாரப் பொறுப்பாளர்",
+    "Board Members":
+        "நிர்வாகக் குழு உறுப்பினர்கள்",
+    "SSK 10-year celebration":
+        "SSK 10 ஆண்டு விழா",
+    "SSK dance team, 2025":
+        "SSK நடனக் குழு, 2025",
+    "Skärholmen Loppet 2026":
+        "ஸ்கார்ஹோல்மன் ஓட்டம் 2026",
+    "Carrom tournament":
+        "கேரம் போட்டி",
+    "Karaoke Day, June 2026":
+        "கரோக்கி நாள், ஜூன் 2026",
+    "Forest trek":
+        "காட்டு நடைப்பயணம்",
+    "Grill and potluck at Lida":
+        "லிடாவில் கிரில் & பகிர்வு விருந்து"
 };

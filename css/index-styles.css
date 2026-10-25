@@ -5,9 +5,9 @@ main#index {
 /* Hero Section */
 #hero {
     min-height: 100vh;
-    padding-top: 120px;
+    padding-top: 200px;   /* clears the fixed header (the hero is pulled up 110px below) */
     padding-bottom: 60px;
-    background: url("../images/backgroundimage.png")  bottom / cover;
+    background: url("../images/backgroundimage.webp")  bottom / cover;
     margin-top: -110px;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +65,8 @@ main#index {
 }
 
 .hero-title {
-    font-size: clamp(50px, 6vw, 60px);
+    font-size: clamp(30px, 5.5vw, 60px);
+    text-wrap: balance;
     font-weight: 700;
     color: #0B3D18;
     line-height: 1.1;

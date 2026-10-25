@@ -176,3 +176,18 @@ button:disabled {
 #gender-other[hidden] {
     display: none;
 }
+
+/* Consent checkbox: box beside left-aligned text */
+#joinForm label.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: left;
+    font-size: 0.85rem;
+    line-height: 1.45;
+}
+
+#joinForm label.consent input {
+    flex-shrink: 0;
+    margin-top: 3px;
+}
