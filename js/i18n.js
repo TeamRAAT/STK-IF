@@ -38,6 +38,8 @@
         var kids = Array.prototype.filter.call(el.children, function (c) { return !c.classList.contains("icon"); });
         var direct = Array.prototype.some.call(el.childNodes, function (n) { return n.nodeType === 3 && n.nodeValue.trim(); });
         if (!direct && kids.length === 1) return false;
+        // A row of links or buttons (e.g. two buttons side by side): translate each one separately
+        if (!direct && kids.length > 1 && kids.every(function (k) { return k.tagName === "A" || k.tagName === "BUTTON"; })) return false;
         var hasText = false;
         for (var n = el.firstChild; n; n = n.nextSibling) {
             if (n.nodeType === 3 && n.nodeValue.trim()) hasText = true;

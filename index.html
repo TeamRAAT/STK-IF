@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/modern.css">
     <link rel="stylesheet" href="css/theme.css" id="theme-css">
     <link rel="stylesheet" href="css/mascots.css">
+    <link rel="stylesheet" href="css/refresh.css">
 </head>
 <body>
 
@@ -49,8 +50,10 @@
 
     <header>
         <div id="logo">
-            <img src="images/logo.webp" alt="Stockholm Tamil Kultur IF Logo">
-            <h1>STK IF</h1>
+            <a class="logo-link" href="index.html" aria-label="STK IF home page">
+                <img src="images/logo.webp" alt="Stockholm Tamil Kultur IF Logo">
+                <h1>STK IF</h1>
+            </a>
             <img id="hamburguer-buttom"src="images/hamburg.button.svg" alt="Hamburger menu button">
 
         </div>
@@ -79,12 +82,23 @@
             <h1 class="hero-title" data-no-translate>Stockholm Tamil Kultur &amp; IF</h1>
             <p class="hero-subtitle">Culture, sport and community in Stockholm</p>
 
-            <img class="hero-logo" src="images/hero-logo.webp" alt="STK IF Circular Logo">
-
             <div class="hero-buttons">
-                <a class="button button-register" href="joinus.html">Register</a>
+                <a class="button button-register" href="joinus.html">Join Us</a>
+                <a class="button button-ghost" href="events.html">See events</a>
             </div>
+
+            <a class="hero-next-event" href="events.html">
+                <img src="posters/poster-1.jpg" alt="">
+                <div class="hero-next-text">
+                    <div class="hero-next-label">Next event</div>
+                    <div class="hero-next-title">SSK IF Diwali</div>
+                    <div class="hero-next-date">Nov 7. 11:00-16:00</div>
+                </div>
+            </a>
         </div>
+
+        <!-- The club crest -->
+        <img class="hero-crest" src="images/hero-logo.webp" alt="Stockholm Tamil Kultur och Idrottsförening crest">
 
         <!-- Mascot: the Nilgiri tahr says hello (pictures in the "mascots" folder) -->
         <div class="hero-mascot" data-mascot="home-hero">
@@ -161,6 +175,7 @@
 
                 <!-- Card 1 -->
                 <div class="event-card-container">
+                    <span class="card-date" data-no-translate><b>7</b>NOV</span>
                     <img class="event-card-image event-card-poster" src="posters/poster-1.jpg" alt="SSK IF Diwali">
                     <div class="card-txt-container">
                         <h2 class="card-title">SSK IF DIWALI</h2>
@@ -181,6 +196,7 @@
 
                 <!-- Card 2 -->
                 <div class="event-card-container">
+                    <span class="card-date" data-no-translate><b>JAN</b>2027</span>
                     <img class="event-card-image" src="images/culture.avif" alt="Pongal Thiruvizha">
                     <div class="card-txt-container">
                         <h2 class="card-title">PONGAL THIRUVIZHA</h2>
@@ -201,6 +217,7 @@
 
                 <!-- Card 3 -->
                 <div class="event-card-container">
+                    <span class="card-date"><b>Soon</b></span>
                     <img class="event-card-image" src="images/carrom-3.jpg" alt="Karaoke and Games Day">
                     <div class="card-txt-container">
                         <h2 class="card-title">KARAOKE &amp; GAMES DAY</h2>

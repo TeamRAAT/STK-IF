@@ -324,5 +324,25 @@ window.STK_TRANSLATIONS.ta = {
     "Sing your favourite songs and play carrom and other games. Fun for all ages.":
         "உங்களுக்குப் பிடித்த பாடல்களைப் பாடுங்கள், கேரம் மற்றும் பிற விளையாட்டுகளை விளையாடுங்கள். எல்லா வயதினருக்கும் கொண்டாட்டம்.",
     "Date to be announced":
-        "தேதி பின்னர் அறிவிக்கப்படும்"
+        "தேதி பின்னர் அறிவிக்கப்படும்",
+    "See events":
+        "நிகழ்வுகளைப் பாருங்கள்",
+    "Next event":
+        "அடுத்த நிகழ்வு",
+    "Soon":
+        "விரைவில்",
+    "STK IF home page":
+        "STK IF முகப்புப் பக்கம்",
+    "Our Sponsors":
+        "எங்கள் ஆதரவாளர்கள்",
+    "Thank you to our sponsors":
+        "எங்கள் ஆதரவாளர்களுக்கு நன்றி",
+    "These partners help us bring Tamil culture and sport to Stockholm.":
+        "இந்தக் கூட்டாளர்கள் ஸ்டாக்ஹோமில் தமிழ்ப் பண்பாட்டையும் விளையாட்டையும் வளர்க்க எங்களுக்கு உதவுகிறார்கள்.",
+    "Support Tamil culture and sport in Stockholm":
+        "ஸ்டாக்ஹோமில் தமிழ்ப் பண்பாட்டையும் விளையாட்டையும் ஆதரியுங்கள்",
+    "We are looking for partners who want to support our events, sports and youth activities. Your logo will be shown here and at our events.":
+        "எங்கள் நிகழ்வுகள், விளையாட்டு, இளைஞர் செயல்பாடுகளை ஆதரிக்க விரும்பும் கூட்டாளர்களைத் தேடுகிறோம். உங்கள் சின்னம் இங்கும் எங்கள் நிகழ்வுகளிலும் காட்டப்படும்.",
+    "Become a sponsor":
+        "ஆதரவாளராகுங்கள்"
 };
