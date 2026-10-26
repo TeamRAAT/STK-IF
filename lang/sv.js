@@ -151,10 +151,6 @@ window.STK_TRANSLATIONS.sv = {
         "Byggd av människor som bryr sig",
     "Volunteer teams will support events, sports, youth activities, communications, the website, and administration. Team introductions will be added as roles are confirmed.":
         "Volontärteam kommer att stötta evenemang, idrott, ungdomsaktiviteter, kommunikation, webbplatsen och administration. Teamen presenteras när rollerna är bekräftade.",
-    "Association in Development":
-        "Förening under uppbyggnad",
-    "Registration and branding are being finalised. Program availability and membership details will be announced as arrangements are confirmed.":
-        "Registrering och varumärke håller på att färdigställas. Program och medlemskap meddelas när allt är bekräftat.",
     "Photo from a previous event":
         "Bild från ett tidigare evenemang",
     "Two women forming a heart with their hands. Others stand behind the women doing peace signs.":

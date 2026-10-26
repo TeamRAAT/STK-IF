@@ -151,10 +151,6 @@ window.STK_TRANSLATIONS.ta = {
         "அக்கறை உள்ளவர்களால் உருவானது",
     "Volunteer teams will support events, sports, youth activities, communications, the website, and administration. Team introductions will be added as roles are confirmed.":
         "நிகழ்வுகள், விளையாட்டு, இளைஞர் செயல்பாடுகள், தகவல் தொடர்பு, இணையதளம், நிர்வாகம் ஆகியவற்றுக்குத் தன்னார்வக் குழுக்கள் துணைபுரியும். பொறுப்புகள் உறுதியானதும் குழுக்கள் அறிமுகப்படுத்தப்படும்.",
-    "Association in Development":
-        "உருவாகி வரும் சங்கம்",
-    "Registration and branding are being finalised. Program availability and membership details will be announced as arrangements are confirmed.":
-        "பதிவும் அடையாள வடிவமைப்பும் இறுதி செய்யப்பட்டு வருகின்றன. நிகழ்ச்சிகள், உறுப்பினர் விவரங்கள் ஏற்பாடுகள் உறுதியானதும் அறிவிக்கப்படும்.",
     "Photo from a previous event":
         "முந்தைய நிகழ்வின் படம்",
     "Two women forming a heart with their hands. Others stand behind the women doing peace signs.":

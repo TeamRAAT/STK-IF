@@ -17,8 +17,17 @@ const POSTER_FILES = [
     const file = POSTER_FILES[Math.floor(Math.random() * POSTER_FILES.length)];
     const image = new Image();
 
-    // Only open the popup once the image has loaded (no empty box if it is missing)
+    // Only open the popup once the image has loaded (no empty box if it is missing),
+    // and after the home page intro (js/hero-intro.js) has finished
     image.onload = function () {
+        if (document.documentElement.classList.contains("hero-intro")) {
+            document.addEventListener("hero-intro:done", openPoster, { once: true });
+        } else {
+            openPoster();
+        }
+    };
+
+    function openPoster() {
         overlay.innerHTML =
             '<div class="poster" role="dialog" aria-modal="true" aria-label="Event poster">' +
                 '<button class="poster-close" type="button" aria-label="Close poster">&times;</button>' +
@@ -50,7 +59,7 @@ const POSTER_FILES = [
         overlay.classList.add("open");
         document.body.style.overflow = "hidden";
         closeButton.focus();
-    };
+    }
 
     image.src = POSTER_FOLDER + file;
 })();
