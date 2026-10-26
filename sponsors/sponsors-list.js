@@ -1,12 +1,21 @@
-// Sponsors shown on the About page, in this order.
+// Sponsors shown on the Sponsors page and the About page, in this order.
 //
 // To ADD a sponsor:    put their logo in this "sponsors" folder, then add a line below:
-//     { name: "Company name", logo: "company-logo.png", url: "https://www.company.se" },
+//     { name: "Company name", logo: "company-logo.webp", url: "https://www.company.se", background: "#ffffff" },
 // To REMOVE a sponsor: delete their line.
 //
-// Logos: a transparent .png, .svg or .webp looks best, about 400 px wide.
-// "url" is optional: leave it out if the sponsor has no website.
-// While the list is empty, the About page only shows the "Become a sponsor" invitation.
+// logo:       the logo file in this folder (.webp, .png, .svg or .jpg, about 600 px wide)
+// url:        their website (optional: leave it out if they have none)
+// background: the colour behind the logo, so the tile blends with it (optional, white if left out)
+//
+// While the list is empty, the pages only show the "Become a sponsor" invitation.
 
 window.STK_SPONSORS = [
+    { name: "Speed", logo: "speed.webp", background: "#000000" },
+    { name: "Nila Groceries", logo: "nila-groceries.webp", url: "https://www.nilagroceries.se", background: "#1e8559" },
+    { name: "Fruängens Bilskola", logo: "fruangens-bilskola.webp", background: "#ffffff" },
+    { name: "Sri Lankan Livs, Sätra", logo: "sri-lankan-livs.webp", background: "#fbf8f1" },
+    { name: "Lyca Mobile", logo: "lyca-mobile.webp", url: "https://www.lycamobile.se", background: "#23264f" },
+    { name: "Millys Indian Supermarket", logo: "millys.webp", background: "#e2000f" },
+    { name: "T2C The Chennai Cuisine", logo: "the-chennai-cuisine.webp", background: "#ffffff" }
 ];

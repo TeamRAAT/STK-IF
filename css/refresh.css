@@ -334,47 +334,246 @@ header #logo .logo-link {
     100% { opacity: 0; transform: scale(1.6); }
 }
 
-/* ---------- About: sponsors ---------- */
+/* ---------- Members: rows stay centred under their heading ---------- */
 
-.sponsors-card { text-align: center; }
-
-.sponsors-card .sponsors-thanks { display: none; }
-.sponsors-card.has-sponsors .sponsors-thanks { display: block; }
-
-.sponsor-grid {
+div.member-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 18px;
-    margin: 24px 0 8px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+div.member-grid .member-card {
+    flex: 0 1 240px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    /* two people per row on phones */
+    div.member-grid { gap: 14px; }
+    div.member-grid .member-card {
+        flex-basis: calc(50% - 7px);
+        min-width: 0;
+        padding: 18px 10px 16px;
+    }
+
+    div.member-grid .member-photo {
+        width: 96px;
+        height: 96px;
+    }
+
+    div.member-grid .member-initials { font-size: 1.9rem; }
+}
+
+/* ---------- Sponsors: logo tiles (Sponsors page and About page) ---------- */
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: clamp(16px, 2vw, 28px);
 }
 
 .sponsor {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 100px;
-    padding: 16px;
+    flex-direction: column;
+    padding: 10px 10px 18px;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 22px;
     background: var(--t-card, #fff);
     border: 1px solid var(--t-line);
+    box-shadow: var(--t-shadow);
     color: var(--t-heading);
-    font-weight: 700;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+    animation: sponsor-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+    animation-delay: calc(var(--i, 0) * 70ms + 120ms);
 }
 
-a.sponsor:hover {
-    transform: translateY(-3px);
+.sponsor:hover {
+    transform: translateY(-6px);
     box-shadow: var(--t-shadow-hover);
 }
 
-.sponsor img {
+/* The logo sits on its own brand colour, so every tile looks finished */
+.sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 9%;
+    box-sizing: border-box;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.sponsor-logo img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sponsor:hover .sponsor-logo img { transform: scale(1.06); }
+
+.sponsor-name {
+    margin-top: 14px;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.sponsor-visit {
+    margin-top: 4px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--t-accent-dark);
+}
+
+.sponsor-visit::after { content: " \2197"; }
+
+@keyframes sponsor-in {
+    from { opacity: 0; transform: translateY(22px) scale(0.97); }
+}
+
+/* About page: a compact strip of logos inside the card */
+.sponsors-card { text-align: center; }
+.sponsors-card .sponsors-thanks { display: none; }
+.sponsors-card.has-sponsors .sponsors-thanks { display: block; }
+
+.sponsors-card .sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px 0 18px;
+}
+
+.sponsors-card .sponsor { flex: 0 1 112px; padding: 5px; border-radius: 16px; }
+.sponsors-card .sponsor-logo { border-radius: 12px; }
+.sponsors-card .sponsor-name,
+.sponsors-card .sponsor-visit { display: none; }
+
+.sponsors-more {
+    display: inline-block;
+    font-weight: 800;
+    color: var(--t-accent-dark);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* ---------- Sponsors page ---------- */
+
+main#sponsors-page {
+    padding: 0 max(4vw, 16px);
+}
+
+.page-hero {
+    max-width: 1200px;
+    margin: 12px auto 0;
+    padding: clamp(48px, 7vw, 96px) clamp(22px, 5vw, 72px);
+    border-radius: 28px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--t-footer-text);
+    background:
+        radial-gradient(rgba(255, 255, 255, 0.07) 1.2px, transparent 1.6px) 0 0 / 22px 22px,
+        radial-gradient(70% 90% at 50% 0%, rgba(241, 194, 50, 0.28), transparent 70%),
+        linear-gradient(160deg, var(--t-footer-1), var(--t-footer-2));
+    box-shadow: 0 24px 60px rgba(20, 16, 12, 0.25);
+}
+
+.page-eyebrow {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--t-gold, #f1c232);
+}
+
+.page-hero h1 {
+    margin: 0;
+    color: #ffffff;
+    /* the site's gradient headings, in white-to-gold for the dark panel */
+    background: linear-gradient(120deg, #ffffff 35%, var(--t-gold, #f1c232) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(40px, 7vw, 88px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+}
+
+.page-lead {
+    max-width: 560px;
+    margin: 18px auto 0;
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.6;
+    opacity: 0.88;
+}
+
+.sponsor-wall {
+    max-width: 1200px;
+    margin: clamp(32px, 5vw, 56px) auto;
+}
+
+/* Rows stay centred, so a short last row doesn't hang to the left */
+.sponsor-wall .sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsor-wall .sponsor { flex: 0 1 260px; }
+
+.sponsor-cta-band {
+    max-width: 900px;
+    margin: 0 auto clamp(48px, 7vw, 96px);
+    padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 48px);
+    border-radius: 28px;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--t-soft-2);
+    border: 1px solid var(--t-line);
+}
+
+.sponsor-cta-band h2 {
+    margin: 0 0 12px;
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: var(--t-heading);
+}
+
+.sponsor-cta-band p {
+    max-width: 560px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+    color: var(--t-muted);
+}
+
+.sponsor-cta-band .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sponsor { animation: none; }
+    .sponsor:hover,
+    .sponsor:hover .sponsor-logo img { transform: none; }
 }
 
 .sponsor-cta {
@@ -414,9 +613,25 @@ a.sponsor:hover {
         box-sizing: border-box;
     }
 
-    .sponsor { width: calc(50% - 9px); }
+    /* Two sponsor tiles per row on phones */
+    .sponsor-wall .sponsor-grid { gap: 14px; }
+    .sponsor-wall .sponsor { flex-basis: calc(50% - 7px); }
+    .sponsor { padding: 8px 8px 14px; border-radius: 18px; }
+    .sponsor-name { font-size: 0.88rem; margin-top: 10px; }
+}
+
+@media (max-width: 600px) {
+    /* the next-event card stays clear of the tahr, even with longer Swedish or Tamil text */
+    #hero .hero-next-event { max-width: 220px; box-sizing: border-box; }
 }
 
 @media (max-width: 380px) {
     #hero .mascot-bubble { width: 96px; }
+
+    /* keep both hero buttons on one row on narrow phones */
+    #hero .hero-buttons { gap: 8px; }
+    #hero .hero-buttons .button {
+        padding: 12px 16px !important;
+        font-size: 0.95rem !important;
+    }
 }

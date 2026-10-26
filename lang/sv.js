@@ -61,6 +61,8 @@ window.STK_TRANSLATIONS.sv = {
         "TAMIL FÖR NYBÖRJARE",
     "An interactive language workshop, basic script, and cultural phrases.":
         "En interaktiv språkworkshop med grundläggande skrift och kulturella fraser.",
+    "Nov 7. 12:00-17:00":
+        "7 nov. 12:00–17:00",
     "Nov 7. 11:00-16:00":
         "7 nov. 11:00–16:00",
     "Nov 7. 14:00-16:00":
@@ -340,5 +342,39 @@ window.STK_TRANSLATIONS.sv = {
     "We are looking for partners who want to support our events, sports and youth activities. Your logo will be shown here and at our events.":
         "Vi söker partner som vill stödja våra evenemang, vår idrott och våra ungdomsaktiviteter. Er logotyp visas här och på våra evenemang.",
     "Become a sponsor":
-        "Bli sponsor"
+        "Bli sponsor",
+    "Sponsors":
+        "Sponsorer",
+    "Thank you":
+        "Tack",
+    "The local businesses that help us bring Tamil culture and sport to Stockholm.":
+        "De lokala företag som hjälper oss att föra tamilsk kultur och idrott till Stockholm.",
+    "Visit website":
+        "Besök webbplatsen",
+    "See all our sponsors":
+        "Se alla våra sponsorer",
+    "Our sponsors":
+        "Våra sponsorer",
+    "Culture, sport and the GOATed Tamil community in Stockholm":
+        "Kultur, idrott och Stockholms GOATade tamilska gemenskap",
+    "Vanakkam! Welcome to the herd":
+        "Vanakkam! Välkommen till flocken",
+    "STK IF is a Tamil cultural and sports club in Stockholm. Like the Nilgiri tahr on our logo, we climb together, bringing culture, sport and community to every generation.":
+        "STK IF är en tamilsk kultur- och idrottsförening i Stockholm. Som nilgiritahren i vår logotyp klättrar vi tillsammans och för samman kultur, idrott och gemenskap för alla generationer.",
+    "From Diwali to Pongal, carrom to karaoke: events that bring the whole herd together. There is something for every generation.":
+        "Från Diwali till Pongal, från carrom till karaoke: evenemang som samlar hela flocken. Det finns något för alla generationer.",
+    "Meet the herd leaders: the people who run STK IF. Get in touch with any of us, we're happy to help.":
+        "Möt flockens ledare: personerna som driver STK IF. Hör av dig till någon av oss, vi hjälper gärna till.",
+    "Join the herd! Fill in your details and choose the activities you'd like to try.":
+        "Gå med i flocken! Fyll i dina uppgifter och välj de aktiviteter du vill prova.",
+    "The real GOATs":
+        "De riktiga GOATs",
+    "The local businesses that help Stockholm Tamil Kultur & IF reach new peaks.":
+        "De lokala företag som hjälper Stockholm Tamil Kultur & IF att nå nya toppar.",
+    "These partners help Stockholm Tamil Kultur & IF reach new peaks.":
+        "Dessa partner hjälper Stockholm Tamil Kultur & IF att nå nya toppar.",
+    "Support Stockholm Tamil Kultur & IF":
+        "Stöd Stockholm Tamil Kultur & IF",
+    "Help the herd climb higher. We are looking for partners who want to support our events, sports and youth activities. Your logo will be shown here and at our events.":
+        "Hjälp flocken att klättra högre. Vi söker partner som vill stödja våra evenemang, vår idrott och våra ungdomsaktiviteter. Er logotyp visas här och på våra evenemang."
 };

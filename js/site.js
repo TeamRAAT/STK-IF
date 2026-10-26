@@ -173,6 +173,7 @@
         "gallery.html": "gallery",
         "learn-tamil.html": "book",
         "members.html": "members",
+        "sponsors.html": "heart",
         "joinus.html": setting("menu-join-us", "goat")
     };
     var currentPage = (location.pathname.split("/").pop() || "index.html").toLowerCase();

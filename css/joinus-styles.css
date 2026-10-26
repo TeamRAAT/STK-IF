@@ -28,6 +28,7 @@ label[for="gender"] {
 #fullname,
 #email ,
 #phone,
+#whatsapp,
 #dob,
 #gender,
 #gender-other {
@@ -129,6 +130,7 @@ button:hover {
     #fullname,
     #email,
     #phone,
+    #whatsapp,
     #dob,
     #gender,
     #gender-other {
