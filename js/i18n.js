@@ -9,6 +9,8 @@
 
 (function () {
     "use strict";
+    // The ?v=... on this script's own link (set in the HTML), passed on to the files it loads
+    var VERSION = (document.currentScript && /\?v=[^&#]+/.exec(document.currentScript.src) || [""])[0];
 
     var DEFAULT = "en";
     var STORE_KEY = "stkif-language";
@@ -144,7 +146,7 @@
     function loadLanguage(code, done) {
         if (code === DEFAULT || window.STK_TRANSLATIONS[code]) { done(); return; }
         var s = document.createElement("script");
-        s.src = "lang/" + code + ".js";
+        s.src = "lang/" + code + ".js" + VERSION;
         s.onload = done;
         s.onerror = function () { console.warn("Missing translation file lang/" + code + ".js"); done(); };
         document.head.appendChild(s);

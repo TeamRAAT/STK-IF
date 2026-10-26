@@ -82,3 +82,13 @@ Each spot can also take a list of pictures (one is picked at random) or `""` to 
 ## LEARN TAMIL PAGE
 
 `learn-tamil.html` has tabs for Tamil history, Tamil letters, Thirukkural (with pages) and Aathichoodi, plus a "Kural of the day". The content lives in the `learn/` folder, one file per tab, so you can add verses or whole new tabs (Moothurai, Nalvazhi, proverbs) without touching the page. See `learn/README.md`.
+
+## UPDATING THE LIVE SITE (VERSION TAG)
+
+Every stylesheet and script link ends with a version tag such as `?v=20261026-2`. Phones keep saved copies of these files, so after changing any `.css` or `.js` file, give the site a new tag before publishing:
+
+```
+node tools/bump-version.js 20261027-1
+```
+
+Use today's date and a running number. This makes every visitor's browser fetch the new files instead of mixing new pages with old styles.

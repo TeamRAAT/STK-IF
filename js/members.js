@@ -9,6 +9,8 @@
 // This works on any web host and when opening the files straight from your computer.
 
 (function () {
+    // The ?v=... on this script's own link (set in the HTML), passed on to the files it loads
+    var VERSION = (document.currentScript && /\?v=[^&#]+/.exec(document.currentScript.src) || [""])[0];
     const MEMBERS_FOLDER = "members/";
     const container = document.getElementById("members");
     if (!container) return;
@@ -30,7 +32,7 @@
         if (i >= folders.length) { render(); return; }
         currentFolder = folders[i].trim();
         const script = document.createElement("script");
-        script.src = MEMBERS_FOLDER + currentFolder + "/info.js";
+        script.src = MEMBERS_FOLDER + currentFolder + "/info.js" + VERSION;
         script.onload = function () { loadNext(i + 1); };
         script.onerror = function () {
             console.warn("Members: could not find " + script.src + " (check the folder name in members-list.js)");
